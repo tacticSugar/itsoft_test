@@ -1,144 +1,570 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>ВЕНАРУС</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="nav">
-        <div class="nav__logo">
-          <img src="./img/logo1.png" alt="лого" class="nav__img" />
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header__logo">
+            <a href="index.html">
+              <img
+                class="header__logo-img"
+                src="img/logo.svg"
+                alt="Логотип сайта"
+              />
+            </a>
+          </div>
+
+          <div class="side-menu">
+            <ul class="side-menu__list">
+              <li class="side-menu__list-item">
+                <a class="side-menu__link" href="#">Где купить</a>
+                <svg
+                  class="side-menu__svg"
+                  viewBox="0 0 1440 233"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 175.235C155.558 214.509 406.974 256.347 591.128 214.783C868.365 152.21 1102.95 -49.9822 1511.48 13.0165C1675 38.2344 1813.43 83.1894 1920 129.122"
+                    stroke="#590D56"
+                  />
+                </svg>
+              </li>
+              <li class="side-menu__list-item">
+                <a class="side-menu__link" href="#">О препарате</a>
+                <svg
+                  class="side-menu__svg"
+                  viewBox="0 0 1440 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 12.0582C155.558 4.40727 406.974 -3.74284 591.128 4.35402C868.365 16.5436 1102.95 55.9316 1511.48 43.6591C1675 38.7465 1813.43 29.9891 1920 21.0412"
+                    stroke="#590D56"
+                  />
+                </svg>
+              </li>
+              <li class="side-menu__list-item">
+                <a class="side-menu__link" href="#">О варикозе</a>
+                <svg
+                  class="side-menu__svg"
+                  viewBox="0 0 1440 126"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 94.5286C155.558 115.611 406.974 138.069 591.128 115.758C868.365 82.1688 1102.95 -26.3671 1511.48 7.45043C1675 20.9873 1813.43 45.119 1920 69.7754"
+                    stroke="#590D56"
+                  />
+                </svg>
+              </li>
+              <li class="side-menu__list-item">
+                <a class="side-menu__link" href="#">Решение</a>
+                <svg
+                  class="side-menu__svg"
+                  viewBox="0 0 1440 158"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 39.335C155.558 12.8119 406.974 -15.4418 591.128 12.6273C868.365 54.8844 1102.95 191.43 1511.48 148.885C1675 131.855 1813.43 101.495 1920 70.4761"
+                    stroke="#590D56"
+                  />
+                </svg>
+              </li>
+              <li class="side-menu__list-item">
+                <a class="side-menu__link" href="#">Специалистам</a>
+                <svg
+                  class="side-menu__svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 1440 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 52.2899C155.558 63.8512 406.974 76.167 591.128 63.9317C868.365 45.5119 1102.95 -14.0077 1511.48 4.53733C1675 11.9608 1813.43 25.1943 1920 38.7155"
+                    stroke="#590D56"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="header__navigation">
+            <a href="#" class="navigation__map">Где купить</a>
+            <div class="burger-button"></div>
+          </nav>
         </div>
-        <div class="nav__rightside">
-          <button class="nav__button">Где купить</button>
-          <div class="nav__burger">Burger</div>
-        </div>
-      </nav>
-    </div>
-
-    <main>
-      <h1>Надежный помощник в лечении варикоза</h1>
-
-      <img src="" alt="" />
-      <div>Схема приема</div>
-      <img src="" alt="" />
-      <div>Инструкция</div>
-      <img src="" alt="" />
-      <div>Где купить</div>
-
-      <img src="" alt="вен1" />
-      <img src="" alt="вен2" />
-      <img src="" alt="вен3" />
-
-      <img src="" alt="лево" />
-      <img src="" alt="право" />
-
-      <button>Где купить ></button>
-    </main>
-
-    <section>Баннер</section>
-
-    <div class="container">
-      <section class="ads">
-        <div class="ads__ad">
-          <img src="./img/dokazEff.svg" alt="effective" class="ads__img" />
-          <div>Доказанная эффективность</div>
-        </div>
-
-        <div class="ads__ad">
-          <img src="./img/newdose.svg" alt="newdose" class="ads__img" />
-          <div>Новая дозировка 100 мг + 900 мг</div>
-        </div>
-
-        <div class="ads__ad">
-          <img src="./img/onepill.svg" alt="onepill" class="ads__img" />
-          <div>Удобный прием. Одна таблетка в сутки*</div>
-          <div>i</div>
-        </div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="about">
-        <h2>О препарате</h2>
-        <article>
-          Венарус показан для терапии симптомов хронических заболеваний вен
-          (устранения и облегчения симптомов).
-        </article>
-        <a>Подробнее ></a>
-
-        <img src="" alt="" />
-        <div>Помогает предотвратить судороги</div>
-
-        <img src="" alt="" />
-        <div>Способствует снижению тяжести в ногах</div>
-
-        <img src="" alt="" />
-        <div>Способствует снижению болевых ощущений</div>
-      </section>
-    </div>
-
-    <section>
-      <h2>Мнение специалистов</h2>
-      <article>
-        Фармакотерапия — неотъемлемый компонент современного лечения
-        хронического заболевания вен.
-      </article>
-      <img src="" alt="girl" />
-      <img src="" alt="play" />
-      <img src="" alt="3dots" />
-    </section>
-
-    <section>
-      <h2>Полезная информация</h2>
-      <img src="" alt="3dots" />
-      <div>Профилактические упражнения</div>
-
-      <img src="" alt="3dots" />
-      <div>Диагностика и способы лечения</div>
-
-      <img src="" alt="3dots" />
-      <div>Планы по питанию</div>
-
-      <div>VioletColorBlock</div>
-      <div>Факты о варикозе</div>
-
-      <button>Подробнее</button>
-    </section>
-
-    <section>
-      <h2>Где купить</h2>
-      <article>
-        Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках вашего
-        города
-      </article>
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <button>apteka.ru</button>
-      <button>366.ru</button>
-      <button>stolichki.ru</button>
-    </section>
-
-    <footer>
-      <a>Сообщить о нежелательном явлении</a>
-      <a>Условия пользования сайтом и файлами Cookies</a>
-      <div>
-        г. Москва, ул. Шаболовка, д. 31, стр. 11 Телефон: +7 (495) 555-55-55
       </div>
-      <img src="" alt="vk" />
-      <img src="" alt="ok" />
-      <img src="" alt="pharmlogo" />
-      <div>Создание сайтов Фарм-студия №1 в Рунете</div>
+    </header>
+
+    <section class="promo">
+      <svg
+        class="promo__svg"
+        viewBox="0 0 1920 1080"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path fill="url(#paint0_linear_1911_63)">
+          <animate
+            attributeName="d"
+            dur="12s"
+            repeatCount="indefinite"
+            values="M1533.87 12.2224C1125.34 123.057 1124.44 651.082 591.128 439.315C406.975 366.192 155.558 439.796 0 508.892V570.719C0 570.719 411.429 369.701 810.208 870.677C1208.99 1371.65 1920 816.038 1920 816.038V133.263C1763.55 52.5691 1697.4 -32.1436 1533.87 12.2224Z;
+
+        M1533.87 3.22307C1124.13 -49.3475 1041 672.5 591.128 430.316C417.066 336.611 182.5 452.001 0 499.893V561.72C0 561.72 420.916 460.856 810.208 861.678C1199.5 1262.5 1920 807.039 1920 807.039V124.263C1747.5 76.5009 1707.5 25.5003 1533.87 3.22307Z;
+
+        M1533.87 4.22346C1151.5 74.4999 1102.05 431.316 591.128 431.316C408.5 431.316 182.5 453.001 0 500.893V562.72C0 562.72 550.916 503.857 810.208 862.679C1069.5 1221.5 1920 808.039 1920 808.039V125.264C1750 170.5 1706.04 -27.42 1533.87 4.22346Z;
+
+        M1533.87 12.2224C1125.34 123.057 1124.44 651.082 591.128 439.315C406.975 366.192 155.558 439.796 0 508.892V570.719C0 570.719 411.429 369.701 810.208 870.677C1208.99 1371.65 1920 816.038 1920 816.038V133.263C1763.55 52.5691 1697.4 -32.1436 1533.87 12.2224Z"
+          ></animate>
+        </path>
+        <defs>
+          <linearGradient
+            id="paint0_linear_1911_63"
+            x1="1757.56"
+            y1="739.56"
+            x2="249.641"
+            y2="893.485"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#590D56" />
+            <stop offset="1" stop-color="#8C1688" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="container">
+        <div class="promo__inner">
+          <h1 class="promo__title">Надежный помощник в лечении варикоза</h1>
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div class="slider-line">
+                <img class="slide active-item" src="img/slide-1.png" alt="" />
+                <img class="slide left-item" src="img/slide-2.png" alt="" />
+                <img class="slide right-item" src="img/slide-3.png" alt="" />
+              </div>
+            </div>
+            <div class="slider-buttons">
+              <button class="slider-prev"></button>
+              <button class="slider-next"></button>
+            </div>
+            <a href="#" class="promo__button">Где купить ></a>
+          </div>
+          <div class="promo__links">
+            <span class="promo__link link-scheme"
+              ><a href="#">Схема приема</a></span
+            >
+            <span class="promo__link link-instruction"
+              ><a href="#">Инструкция</a></span
+            >
+            <span class="promo__link link-buy"><a href="#">Где купить</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <div class="disclaimer-wrapper">
+        <p class="disclaimer-text">
+          Имеются противопоказания, необходимо ознакомиться с инструкцией или
+          получить консультацию специалиста
+        </p>
+        <svg
+          class="disclaimer-exit"
+          width="10"
+          height="11"
+          viewBox="0 0 10 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 1L5 5.5M9 10L5 5.5M5 5.5L9 1L1 10" stroke="#8A8A8A" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="marquee__inner">
+        <a href="#"
+          >получить скидку 10% >>> получить скидку 10% >>> получить скидку 10%
+          >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку
+          10% >>> получить скидку 10% >>> получить скидку 10% >>> получить
+          скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>
+          получить скидку 10% >>>
+        </a>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages-top">
+          <p class="advantages-top__text">Доказанная эффективность</p>
+          <p class="advantages-top__text">Новая дозировка 100 мг + 900 мг</p>
+          <p class="advantages-top__text hidden-trigger">
+            Удобный прием. Одна таблетка в сутки*
+          </p>
+          <div class="advantages__hidden-text">
+            Для лучшего результата стоит посоветоваться с врачом
+          </div>
+        </div>
+
+        <div class="advantages-main">
+          <div class="advantages__text">
+            <h2 class="advantages__title">Комплексное действие</h2>
+            <p class="advantages__description">
+              Венарус показан для терапии симптомов хронических заболеваний вен
+              (устранения и облегчения симптомов).
+            </p>
+            <a href="#" class="statement__link">Подробнее ></a>
+          </div>
+          <div class="advantages-statements">
+            <div class="advantages-statement">
+              <h3 class="statement__text">
+                Помогает<br />
+                предотвратить судороги
+              </h3>
+              <svg
+                class="statement__svg"
+                width="134"
+                height="135"
+                viewBox="0 0 134 135"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="67" cy="67.0076" r="67" fill="#590D56" />
+                <path
+                  class="svg-rotate"
+                  d="M78.3316 12.8502L78.49 12.9515L78.6759 12.9234L91.9762 10.91L99.3797 22.1413L99.4832 22.2983L99.6645 22.3482L112.634 25.9186L114.829 39.1902L114.86 39.3757L115.005 39.495L125.401 48.0319L122.008 61.049L121.961 61.2309L122.045 61.399L128.07 73.4263L119.676 83.9381L119.559 84.085L119.567 84.2728L120.18 97.7108L108.236 103.9L108.069 103.986L108 104.161L103.094 116.686L89.6655 117.482L89.4778 117.493L89.3439 117.626L79.7671 127.072L67.176 122.337L67 122.271L66.824 122.337L54.2329 127.072L44.6561 117.626L44.5222 117.493L44.3345 117.482L30.9062 116.686L25.9996 104.161L25.9311 103.986L25.7641 103.9L13.8205 97.7108L14.4325 84.2728L14.4411 84.085L14.3238 83.9381L5.92995 73.4263L11.9548 61.399L12.039 61.2309L11.9916 61.049L8.599 48.0319L18.9949 39.495L19.1402 39.3757L19.1709 39.1902L21.3661 25.9186L34.3355 22.3482L34.5168 22.2983L34.6203 22.1413L42.0237 10.91L55.3241 12.9234L55.51 12.9515L55.6684 12.8502L67 5.60113L78.3316 12.8502Z"
+                  stroke="white"
+                />
+              </svg>
+            </div>
+            <div class="advantages-statement">
+              <h3 class="statement__text">
+                Способствует<br />
+                снижению тяжести <br />
+                в ногах
+              </h3>
+              <svg
+                class="statement__svg"
+                width="149"
+                height="166"
+                viewBox="0 0 149 166"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="79" cy="81.0076" r="67" fill="#590D56" />
+                <path stroke="white">
+                  <animate
+                    attributeName="d"
+                    dur="12s"
+                    repeatCount="indefinite"
+                    values="M27.415 149.492C45.9482 144.21 86.9407 122.566 102.646 78.2468C118.351 33.9274 120.711 16.0275 119.928 12.6174;
+
+                    M0.709315 137.4C19.2424 132.118 -8.98559 86.9131 36.5 75.0001C99.4999 58.5 107.5 13 93.2226 0.525608;
+
+                    M11.7093 141.4C-26.5 87.5 43.5143 105.913 88.9999 93.9996C152 77.4994 84 -19.0002 104.223 4.52526;
+
+                    M27.415 149.492C45.9482 144.21 86.9407 122.566 102.646 78.2468C118.351 33.9274 120.711 16.0275 119.928 12.6174"
+                  ></animate>
+                </path>
+                <path stroke="white">
+                  <animate
+                    attributeName="d"
+                    dur="20s"
+                    repeatCount="indefinite"
+                    values="M8.37262 138.723C10.8321 130.326 21.7349 110.438 45.6698 98.0604C75.5883 82.5885 120.669 81.0851 145.848 48.3856;
+
+                    M0.70931 128.4C80.5 133 49.9297 96.2354 75.9401 57.1549C102 17.9999 152 34.5 117 0.999909;
+
+                    M13.7095 131.4C-32.5 76.0001 62.9298 99.2353 88.9402 60.1548C115 20.9999 88.9401 -7.50012 130 3.99985;
+
+                    M8.37262 138.723C10.8321 130.326 21.7349 110.438 45.6698 98.0604C75.5883 82.5885 120.669 81.0851 145.848 48.3856"
+                  ></animate>
+                </path>
+              </svg>
+            </div>
+            <div class="advantages-statement">
+              <h3 class="statement__text">
+                Способствует снижению<br />
+                болевых ощущений
+              </h3>
+              <svg
+                class="statement__svg"
+                width="134"
+                height="135"
+                viewBox="0 0 134 135"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M134 67.0076C134 104.011 104.003 134.008 67 134.008C29.9969 134.008 0 104.011 0 67.0076C0 30.0045 29.9969 0.00756836 67 0.00756836C104.003 0.00756836 134 30.0045 134 67.0076Z"
+                  fill="#590D56"
+                />
+                <path
+                  class="svg-pulse"
+                  d="M90.5 67.0076C90.5 79.9863 79.9787 90.5076 67 90.5076C54.0213 90.5076 43.5 79.9863 43.5 67.0076C43.5 54.0289 54.0213 43.5076 67 43.5076C79.9787 43.5076 90.5 54.0289 90.5 67.0076Z"
+                  stroke="white"
+                />
+                <path
+                  d="M71.5 67.0076C71.5 69.4928 69.4853 71.5076 67 71.5076C64.5147 71.5076 62.5 69.4928 62.5 67.0076C62.5 64.5223 64.5147 62.5076 67 62.5076C69.4853 62.5076 71.5 64.5223 71.5 67.0076Z"
+                  stroke="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews-wrapper">
+          <div class="reviews-column">
+            <h2 class="reviews__title">Мнение специалистов</h2>
+            <p class="reviews__text">
+              Фармакотерапия —<br />неотъемлемый компонент современного лечения
+              хронического заболевания вен.
+            </p>
+          </div>
+          <div class="reviews-column">
+            <!-- Slider main container -->
+            <div class="swiper reviews__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide popup-trigger">
+                  <img
+                    src="img/reviews-slide-1.jpg"
+                    alt=""
+                    class="reviews__img"
+                  />
+                </div>
+                <div class="swiper-slide popup-trigger">
+                  <img
+                    src="img/reviews-slide-1.jpg"
+                    alt=""
+                    class="reviews__img"
+                  />
+                </div>
+                <div class="swiper-slide popup-trigger">
+                  <img
+                    src="img/reviews-slide-1.jpg"
+                    alt=""
+                    class="reviews__img"
+                  />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="reviews__popup">
+              <iframe
+                class="reviews__iframe"
+                width="70%"
+                height="70%"
+                src="https://www.youtube.com/embed/Gkr_PhPkbv4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <button class="reviews__close-button">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <div class="info-wrapper">
+          <div class="column__info">
+            <h2 class="info__title">Полезная информация</h2>
+            <p class="info__text">
+              ВЕНАРУС — надежный помощник в лечении варикоза, хранитель женских
+              ног на пути к ее мечте!
+            </p>
+          </div>
+          <div class="column__info">
+            <div class="info__grid">
+              <div class="info__grid-item grid-1">
+                <a href="#" class="info__grid-item-link">
+                  <span
+                    >Профилак<span class="br-span">-<br /></span>тические
+                    упражнения</span
+                  >
+                </a>
+              </div>
+              <div class="info__grid-item grid-2">
+                <a href="#" class="info__grid-item-link">
+                  <span>Диагностика и способы лечения</span>
+                </a>
+              </div>
+              <div class="info__grid-item grid-3">
+                <a href="#" class="info__grid-item-link">
+                  <span
+                    >Рекомен<span class="br-span">-<br /></span>дации по питанию
+                  </span>
+                </a>
+              </div>
+              <div class="info__grid-item grid-4">
+                <a href="#" class="info__grid-item-link">
+                  <span>Факты о варикозе</span>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="info__grid-btn">Подробнее ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy">
+      <div class="container">
+        <div class="buy-wrapper">
+          <div class="buy-column">
+            <h2 class="buy__title">Где купить</h2>
+            <p class="buy__text">
+              Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках
+              вашего города
+            </p>
+          </div>
+          <div class="buy-column">
+            <img src="img/buy-img.png" alt="" class="buy__img" />
+            <div class="buy__button-wrapper">
+              <a href="#" class="buy__link">apteka.ru</a>
+              <a href="#" class="buy__link">366.ru</a>
+              <a href="#" class="buy__link">stolichki.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <a href="#" class="footer__text">Сообщить о нежелательном явлении</a>
+          <a href="#" class="footer__text"
+            >Условия пользования сайтом и файлами Cookies</a
+          >
+          <div class="footer__socials">
+            <a href="#" class="footer__vk social">
+              <svg
+                width="33"
+                height="20"
+                viewBox="0 0 33 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31.3689 1.66406C31.5447 0.960938 31.3689 0.375 30.3142 0.375H26.8572C25.9783 0.375 25.5681 0.84375 25.3337 1.37109C25.3337 1.37109 23.5759 5.64844 21.115 8.46094C20.2947 9.22266 19.9431 9.51562 19.4744 9.51562C19.2986 9.51562 18.947 9.22266 18.947 8.51953V1.66406C18.947 0.785156 18.7126 0.375 17.9509 0.375H12.5603C11.9744 0.375 11.6814 0.785156 11.6814 1.19531C11.6814 2.01562 12.9119 2.19141 13.0291 4.53516V9.63281C13.0291 10.7461 12.8533 10.9805 12.3845 10.9805C11.2126 10.9805 8.40015 6.64453 6.70093 1.72266C6.34937 0.785156 5.9978 0.375 5.1189 0.375H1.66187C0.724365 0.375 0.48999 0.84375 0.48999 1.37109C0.48999 2.30859 1.66187 6.82031 5.93921 12.8555C8.8103 16.957 12.8533 19.125 16.4861 19.125C18.6541 19.125 18.947 18.6562 18.947 17.8359C18.947 13.9102 18.7712 13.5 19.8259 13.5C20.3533 13.5 21.2322 13.793 23.283 15.7852C25.6267 18.1289 26.0369 19.125 27.3259 19.125H30.783C31.7791 19.125 32.2478 18.6562 31.9548 17.6602C31.3103 15.668 26.9158 11.4492 26.6814 11.1562C26.1541 10.5117 26.3298 10.2188 26.6814 9.63281C26.6814 9.63281 30.9001 3.65625 31.3689 1.66406Z"
+                  fill="#7A7A7A"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__fb social">
+              <svg
+                width="28"
+                height="27"
+                viewBox="0 0 28 27"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.4087 0.625H3.78369C2.20166 0.625 0.971191 1.91406 0.971191 3.4375V24.0625C0.971191 25.6445 2.20166 26.875 3.78369 26.875H11.811V17.9688H8.11963V13.75H11.811V10.5859C11.811 6.95312 13.979 4.90234 17.2603 4.90234C18.9009 4.90234 20.5415 5.19531 20.5415 5.19531V8.76953H18.7251C16.9087 8.76953 16.3228 9.88281 16.3228 11.0547V13.75H20.3657L19.7212 17.9688H16.3228V26.875H24.4087C25.9321 26.875 27.2212 25.6445 27.2212 24.0625V3.4375C27.2212 1.91406 25.9321 0.625 24.4087 0.625Z"
+                  fill="#7A7A7A"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__tw social">
+              <svg
+                width="31"
+                height="25"
+                viewBox="0 0 31 25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.8076 6.65625C28.9795 5.77734 30.0342 4.72266 30.8545 3.49219C29.7998 3.96094 28.5693 4.3125 27.3389 4.42969C28.6279 3.66797 29.5654 2.49609 30.0342 1.03125C28.8623 1.73438 27.5146 2.26172 26.167 2.55469C24.9951 1.32422 23.4131 0.621094 21.6553 0.621094C18.2568 0.621094 15.5029 3.375 15.5029 6.77344C15.5029 7.24219 15.5615 7.71094 15.6787 8.17969C10.5811 7.88672 6.01074 5.42578 2.96387 1.73438C2.43652 2.61328 2.14355 3.66797 2.14355 4.83984C2.14355 6.94922 3.19824 8.82422 4.89746 9.9375C3.90137 9.87891 2.90527 9.64453 2.08496 9.17578V9.23438C2.08496 12.2227 4.19434 14.6836 7.00684 15.2695C6.53809 15.3867 5.95215 15.5039 5.4248 15.5039C5.01465 15.5039 4.66309 15.4453 4.25293 15.3867C5.01465 17.8477 7.2998 19.6055 9.99512 19.6641C7.88574 21.3047 5.24902 22.3008 2.37793 22.3008C1.85059 22.3008 1.38184 22.2422 0.913086 22.1836C3.6084 23.9414 6.83105 24.9375 10.3467 24.9375C21.6553 24.9375 27.8076 15.6211 27.8076 7.47656C27.8076 7.18359 27.8076 6.94922 27.8076 6.65625Z"
+                  fill="#7A7A7A"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__ok social">
+              <svg
+                width="27"
+                height="27"
+                viewBox="0 0 27 27"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.4625 9.17969C11.4625 10.4102 12.5172 11.4648 13.8063 11.4648C15.0367 11.4648 16.0914 10.4688 16.0914 9.17969C16.0914 7.83203 15.0367 6.83594 13.8063 6.83594C12.5172 6.83594 11.4625 7.83203 11.4625 9.17969ZM26.9313 3.4375C26.9313 1.91406 25.6422 0.625 24.1188 0.625H3.49377C1.91174 0.625 0.681274 1.91406 0.681274 3.4375V24.0625C0.681274 25.6445 1.91174 26.875 3.49377 26.875H24.1188C25.6422 26.875 26.9313 25.6445 26.9313 24.0625V3.4375ZM9.00159 9.17969C9.00159 6.54297 11.1696 4.375 13.8063 4.375C16.3844 4.375 18.5524 6.54297 18.5524 9.17969C18.5524 11.7578 16.3844 13.8672 13.8063 13.8672C11.1696 13.8672 9.00159 11.7578 9.00159 9.17969ZM19.2555 14.4531C19.7242 15.3906 19.1969 15.8594 17.9664 16.6211C16.9703 17.2656 15.6227 17.5 14.6852 17.6172L15.4469 18.3789L18.2594 21.1914C19.2555 22.2461 17.6149 23.8281 16.5602 22.832C15.8571 22.1289 14.861 21.1328 13.8063 20.0195L10.9938 22.832C9.93909 23.8281 8.29846 22.1875 9.35315 21.1914C10.0563 20.4297 11.0524 19.4336 12.1071 18.3789L12.8688 17.6172C11.9899 17.5 10.5836 17.2656 9.58752 16.6211C8.35706 15.8594 7.82971 15.3906 8.29846 14.4531C8.59143 13.9258 9.29456 13.457 10.2906 14.2773C10.2906 14.2773 11.6383 15.332 13.8063 15.332C15.9156 15.332 17.2633 14.2773 17.2633 14.2773C18.2594 13.457 18.9625 13.9258 19.2555 14.4531Z"
+                  fill="#7A7A7A"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="footer__adress">
+            г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж<br />
+            Телефон: +7 (495) 555-55-55
+          </p>
+          <div class="pharm-wrapper">
+            <img src="img/pharm.svg" alt="" class="pharm" />
+            <p class="pharm__desc">
+              Создание сайтов<br />Фарм-студия №1 в Рунете
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.production__slider', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        speed: 1000,
+        watchSlidesProgress: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            initialSlide: 2,
+          },
+        },
+      })
+
+      const reviewsSlider = new Swiper('.reviews__slider', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 45,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      })
+    </script>
   </body>
 </html>
