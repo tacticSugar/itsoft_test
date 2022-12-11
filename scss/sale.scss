@@ -1,0 +1,44 @@
+.sale {
+  display: none;
+  max-width: 100%;
+  margin: 20px 0;
+  border-top: 1px solid #47093e;
+  border-bottom: 1px solid #47093e;
+  &__inner {
+    display: flex;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 0;
+    & a {
+      font-size: 30px;
+      white-space: nowrap;
+      text-align: center;
+      margin: 0;
+      animation: sale 45s infinite linear;
+      &::after {
+        content: 'получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> ';
+      }
+    }
+  }
+}
+
+@keyframes sale {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 375px) {
+  .sale {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .sale__inner a {
+    font-size: 48px;
+  }
+}

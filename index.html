@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ВЕНАРУС</title>
+    <title>Venarus</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -111,9 +110,9 @@
       </div>
     </header>
 
-    <section class="promo">
+    <section class="main">
       <svg
-        class="promo__svg"
+        class="main__svg"
         viewBox="0 0 1920 1080"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -147,8 +146,8 @@
         </defs>
       </svg>
       <div class="container">
-        <div class="promo__inner">
-          <h1 class="promo__title">Надежный помощник в лечении варикоза</h1>
+        <div class="main__inner">
+          <h1 class="main__title">Надежный помощник в лечении варикоза</h1>
           <div class="slider-wrapper">
             <div class="slider">
               <div class="slider-line">
@@ -161,16 +160,16 @@
               <button class="slider-prev"></button>
               <button class="slider-next"></button>
             </div>
-            <a href="#" class="promo__button">Где купить ></a>
+            <a href="#" class="main__button">Где купить ></a>
           </div>
-          <div class="promo__links">
-            <span class="promo__link link-scheme"
+          <div class="main__links">
+            <span class="main__link link-scheme"
               ><a href="#">Схема приема</a></span
             >
-            <span class="promo__link link-instruction"
+            <span class="main__link link-instruction"
               ><a href="#">Инструкция</a></span
             >
-            <span class="promo__link link-buy"><a href="#">Где купить</a></span>
+            <span class="main__link link-buy"><a href="#">Где купить</a></span>
           </div>
         </div>
       </div>
@@ -195,8 +194,8 @@
       </div>
     </section>
 
-    <section class="marquee">
-      <div class="marquee__inner">
+    <section class="sale">
+      <div class="sale__inner">
         <a href="#"
           >получить скидку 10% >>> получить скидку 10% >>> получить скидку 10%
           >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку
@@ -454,6 +453,15 @@
       </div>
     </section>
 
+    <section class="disclaimer-footer">
+      <div class="disclaimer-wrapper">
+        <p class="disclaimer-text">
+          Имеются противопоказания, необходимо ознакомиться с инструкцией или
+          получить консультацию специалиста
+        </p>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
@@ -529,42 +537,23 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.production__slider', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: false,
-        speed: 1000,
-        watchSlidesProgress: true,
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            initialSlide: 2,
-          },
-        },
-      })
-
       const reviewsSlider = new Swiper('.reviews__slider', {
-        // Optional parameters
         direction: 'horizontal',
+        grabCursor: true,
+        speed: 400,
+        spaceBetween: 100,
         loop: true,
-        spaceBetween: 45,
-
-        // If we need pagination
+        autoplay: {
+          delay: 5000,
+        },
         pagination: {
+          clickable: true,
           el: '.swiper-pagination',
         },
       })
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

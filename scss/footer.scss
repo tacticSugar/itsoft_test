@@ -1,0 +1,82 @@
+.footer {
+  padding-top: 30px;
+  text-align: center;
+  &__text {
+    font-family: 'Roboto-light';
+    font-weight: 300;
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-bottom: 15px;
+    display: block;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    & svg path {
+      transition: all 0.2s ease;
+    }
+    & svg:hover path {
+      fill: $mainColor;
+    }
+  }
+  &__adress {
+    color: #828282;
+    font-family: 'Roboto-Regular';
+  }
+  & .pharm__desc {
+    display: inline;
+    text-align: left;
+    color: #828282;
+    max-width: 100px;
+  }
+  & .pharm-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+    }
+
+    &__socials {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__adress {
+    grid-column: 2/3;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer .pharm__desc {
+    max-width: 210px;
+  }
+  .footer__text,
+  .footer__adress {
+    text-align: left;
+  }
+  .footer__socials {
+    justify-content: start;
+    padding-left: 50px;
+    gap: 40px;
+  }
+  .footer-wrapper {
+    text-align: left;
+    padding-left: 80px;
+  }
+}

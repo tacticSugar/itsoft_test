@@ -1,0 +1,30 @@
+@import './vars.scss';
+@import './fonts.scss';
+@import './reset.scss';
+@import './global.scss';
+@import './header.scss';
+@import './main.scss';
+@import './disclaimer.scss';
+@import './sale.scss';
+@import './advantages.scss';
+@import './reviews.scss';
+@import './info.scss';
+@import './buy.scss';
+@import './footer.scss';
+
+@media (min-width: 1440px) {
+  .side-menu__list-item:nth-child(3) .side-menu__svg {
+    top: 70px;
+  }
+  .side-menu__list-item:nth-child(4) .side-menu__svg {
+    top: 200px;
+  }
+
+  .side-menu__list-item:nth-child(5) .side-menu__svg {
+    top: 80px;
+  }
+}
+
+.reviews-wrapper .reviews__popup-active {
+  z-index: 999;
+}
