@@ -433,17 +433,17 @@ button:disabled {
 }
 
 .link-scheme::before {
-  background-image: url(../img/main-scheme.svg);
+  background-image: url(../img/promo-scheme.svg);
   left: 28px;
 }
 
 .link-instruction::before {
-  background-image: url(../img/main-instruction.svg);
+  background-image: url(../img/promo-instruction.svg);
   left: 22px;
 }
 
 .link-buy::before {
-  background-image: url(../img/main-where-to-buy.svg);
+  background-image: url(../img/promo-where-to-buy.svg);
   left: 18px;
 }
 
@@ -765,7 +765,7 @@ button:disabled {
     width: auto;
   }
   .main__links .link-buy::before {
-    background-image: url(../img/main-where-to-buy.svg);
+    background-image: url(../img/promo-where-to-buy.svg);
     left: -47px;
   }
 }
